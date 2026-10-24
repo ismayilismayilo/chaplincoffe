@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chaplin Coffee – Bakıda qəhvə, desert və canlı musiqi</title>
+<meta name="description" content="Chaplin Coffee Baku: İçərişəhər və Ağ şəhərdə specialty qəhvə, desertlər, mocktaillər, şərab və canlı piano musiqisi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0b0b0c;--g:#6c6c72;--line:#e3e3e6;--soft:#f5f5f6;--paper:#fff;
+--hand:'Great Vibes','Brush Script MT',cursive;--serif:'Bodoni Moda',Georgia,serif;--sans:'Jost',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);overflow-x:hidden;line-height:1.7;padding-top:env(safe-area-inset-top)}
+body::after{content:"";position:fixed;inset:-50%;z-index:300;pointer-events:none;opacity:.07;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");animation:gr .6s steps(5) infinite}
+@keyframes gr{20%{transform:translate(-3%,2%)}40%{transform:translate(2%,-3%)}60%{transform:translate(-2%,-1%)}80%{transform:translate(3%,3%)}}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:auto;padding:0 22px}
+section{padding:104px 0;position:relative}
+.alt{background:var(--soft)}
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.2rem,6vw,3.7rem);line-height:1.15}
+h2 em{font-family:var(--hand);font-style:normal;font-size:1.3em}
+h3{font-family:var(--serif);font-weight:600;font-size:1.25rem}
+.sub{color:var(--g);max-width:540px;margin-top:10px}
+.center{text-align:center}.center .sub{margin-inline:auto}
+.orn{display:flex;align-items:center;justify-content:center;gap:14px;margin:18px 0 6px}
+.orn i{height:1px;width:80px;background:var(--ink);opacity:.35}
+.orn b{width:9px;height:9px;transform:rotate(45deg);border:1.5px solid var(--ink);animation:spin 6s linear infinite}
+@keyframes spin{50%{transform:rotate(225deg) scale(1.3)}to{transform:rotate(405deg)}}
+.btn{display:inline-block;padding:15px 36px;font:500 .9rem var(--sans);letter-spacing:.16em;text-transform:uppercase;border:1.5px solid var(--ink);position:relative;overflow:hidden;transition:.45s;cursor:pointer;z-index:0;background:transparent;color:var(--ink)}
+.btn::before{content:"";position:absolute;inset:0;background:var(--ink);transform:translateY(101%);transition:.45s;z-index:-1}
+.btn:hover{color:#fff;transform:translateY(-3px);box-shadow:0 14px 30px rgba(0,0,0,.2)}.btn:hover::before{transform:none}
+.btn.sol{background:var(--ink);color:#fff}.btn.sol::before{background:#fff}.btn.sol:hover{color:var(--ink)}
+#pre{position:fixed;inset:0;background:#fff;z-index:999;display:grid;place-items:center;transition:opacity .9s .2s,visibility .9s .2s;animation:preOff .1s 5s forwards}
+#pre.off{opacity:0;visibility:hidden}
+@keyframes preOff{to{opacity:0;visibility:hidden}}
+#pre div{text-align:center}
+#pre svg{width:130px}
+#pre b{display:block;font-family:var(--hand);font-weight:400;font-size:clamp(3.4rem,13vw,6rem);line-height:1;clip-path:inset(0 100% 0 0);animation:write 1.6s .6s forwards}
+@keyframes write{to{clip-path:inset(0 0 0 0)}}
+.dr path,.dr ellipse{fill:none;stroke:var(--ink);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 1.8s ease forwards}
+.dr :nth-child(2){animation-delay:.3s}.dr :nth-child(3){animation-delay:.6s}.dr :nth-child(4){animation-delay:.9s}
+@keyframes draw{to{stroke-dashoffset:0}}
+.dr .fl{fill:var(--ink);fill-opacity:0;animation:draw 1.8s ease forwards,fil .8s 1.6s forwards}
+@keyframes fil{to{fill-opacity:1}}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:calc(16px + env(safe-area-inset-top)) 0 16px;transition:.4s}
+nav.s{background:rgba(255,255,255,.94);backdrop-filter:blur(12px);padding-top:calc(8px + env(safe-area-inset-top));padding-bottom:8px;box-shadow:0 1px 0 var(--line),0 8px 30px rgba(0,0,0,.06)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:var(--hand);font-size:2.4rem;line-height:1}
+.logo small{font-family:var(--sans);font-size:.55rem;letter-spacing:.5em;display:block;text-align:center}
+.links{display:flex;gap:28px;align-items:center}
+.links a{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;position:relative;padding:4px 0}
+.links a:not(.btn)::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--ink);transition:.35s}
+.links a:not(.btn):hover::after{width:100%}
+.links .btn{padding:9px 22px;font-size:.74rem}
+.burger{display:none;width:44px;height:44px;background:none;border:0;cursor:pointer;position:relative;z-index:120}
+.burger span{position:absolute;left:10px;right:10px;height:1.5px;background:var(--ink);transition:.4s}
+.burger span:nth-child(1){top:15px}.burger span:nth-child(2){top:21px}.burger span:nth-child(3){top:27px}
+.burger.x span:nth-child(1){top:21px;transform:rotate(45deg)}.burger.x span:nth-child(2){opacity:0}.burger.x span:nth-child(3){top:21px;transform:rotate(-45deg)}
+#home{min-height:100svh;display:grid;place-items:center;text-align:center;padding:110px 0 90px;background:radial-gradient(ellipse at 50% 40%,#fff 30%,#ececee 100%);overflow:hidden}
+#home .wrap{position:relative;z-index:2}
+canvas#pt{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
+.hat{width:clamp(150px,30vw,220px);display:block;margin:0 auto;animation:bob 5s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-8px) rotate(-2deg)}}
+.hero-t{font-family:var(--hand);font-size:clamp(5rem,21vw,12.5rem);line-height:.95;margin-top:-6px}
+.hero-t span{display:inline-block;opacity:0;transform:translateY(60px) rotate(-8deg);animation:ltr .9s forwards cubic-bezier(.2,1.4,.4,1)}
+@keyframes ltr{to{opacity:1;transform:none}}
+.tag{letter-spacing:.7em;font-size:.78rem;font-weight:500;opacity:0;animation:fade 1s 1.9s forwards;padding-left:.7em}
+.hero-s{font-family:var(--serif);font-style:italic;font-size:clamp(1.05rem,2.8vw,1.4rem);max-width:600px;margin:22px auto 34px;color:#333;opacity:0;animation:fade 1s 2.1s forwards}
+.cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;opacity:0;animation:fade 1s 2.4s forwards}
+@keyframes fade{to{opacity:1}}
+.scroll{position:absolute;bottom:22px;left:50%;width:24px;height:42px;border:1.5px solid var(--ink);border-radius:20px;z-index:2;transform:translateX(-50%)}
+.scroll::after{content:"";position:absolute;left:50%;top:7px;width:3px;height:8px;margin-left:-1.5px;background:var(--ink);border-radius:2px;animation:sc 1.6s infinite}
+@keyframes sc{to{transform:translateY(16px);opacity:0}}
+.film{background:var(--ink);color:#fff;padding:26px 0;overflow:hidden;white-space:nowrap;position:relative}
+.film::before,.film::after{content:"";position:absolute;left:0;right:0;height:8px;background:repeating-linear-gradient(90deg,#fff 0 14px,transparent 14px 30px);animation:hole 4s linear infinite;opacity:.9}
+.film::before{top:7px}.film::after{bottom:7px}
+@keyframes hole{to{background-position:30px 0}}
+.film div{display:inline-block;animation:mq 34s linear infinite;font-family:var(--hand);font-size:2.1rem}
+.film span{margin:0 26px}
+@keyframes mq{to{transform:translateX(-50%)}}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.frame{aspect-ratio:4/5;background:var(--ink);position:relative;display:grid;place-items:center;color:#fff;overflow:hidden;transition:transform .3s;box-shadow:22px 22px 0 var(--line)}
+.frame::before{content:"";position:absolute;inset:16px;border:1px solid rgba(255,255,255,.5)}
+.frame::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 22px,rgba(255,255,255,.05) 22px 23px)}
+.frame b{font-family:var(--hand);font-weight:400;font-size:clamp(3rem,7vw,4.4rem);text-align:center;line-height:1.1;z-index:1;animation:glo 3.5s ease-in-out infinite}
+@keyframes glo{50%{text-shadow:0 0 28px rgba(255,255,255,.8)}}
+.about p{margin-top:16px;color:#333}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:34px;border:1px solid var(--ink)}
+.stat{text-align:center;padding:20px 6px;transition:.4s;border-right:1px solid var(--ink)}.stat:last-child{border:0}
+.stat:hover{background:var(--ink);color:#fff}
+.stat b{font-family:var(--serif);font-size:2.2rem;display:block;line-height:1.1;font-weight:400}.stat span{font-size:.8rem;color:var(--g)}.stat:hover span{color:#ccc}
+.tabs{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:36px 0 40px}
+.tab{padding:10px 22px;border:1px solid var(--ink);background:#fff;color:var(--ink);cursor:pointer;font:400 .8rem var(--sans);letter-spacing:.14em;text-transform:uppercase;transition:.35s}
+.tab.on,.tab:hover{background:var(--ink);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px;text-align:left}
+.card{border:1px solid var(--line);padding:30px 24px;position:relative;overflow:hidden;background:#fff;transition:transform .4s,background .4s,color .4s,box-shadow .4s;animation:pop .6s both}
+@keyframes pop{from{opacity:0;transform:translateY(40px)}}
+.card:hover{background:var(--ink);color:#fff;box-shadow:0 24px 50px rgba(0,0,0,.3)}
+.card .ic{font-size:2.3rem;display:inline-block;transition:.5s}.card:hover .ic{transform:scale(1.25) rotate(-8deg)}
+.card h3{margin:10px 0 6px}.card p{font-size:.92rem;color:var(--g)}.card:hover p{color:#ccc}
+.pn{max-width:620px;margin:40px auto 0;user-select:none}
+.keys{position:relative;display:flex;height:210px;border:2px solid var(--ink);border-top-width:12px;background:var(--ink);gap:2px;box-shadow:0 24px 50px rgba(0,0,0,.25)}
+.wk{flex:1;background:#fff;border:0;border-radius:0 0 6px 6px;cursor:pointer;transition:.12s;font:400 .7rem var(--sans);color:var(--g);display:flex;align-items:flex-end;justify-content:center;padding-bottom:10px}
+.wk.a,.wk:active{background:#dcdcdf;transform:translateY(3px)}
+.bk{position:absolute;top:0;width:8%;height:62%;background:var(--ink);border:1px solid #444;border-radius:0 0 5px 5px;cursor:pointer;z-index:2;transition:.12s;box-shadow:0 6px 10px rgba(0,0,0,.4)}
+.bk.a,.bk:active{background:#555;height:60%}
+.hint{margin-top:18px;font-family:var(--hand);font-size:1.7rem}
+.notes{height:34px;position:relative;margin-top:10px}
+.notes i{position:absolute;bottom:0;font-style:normal;font-size:1.4rem;animation:nt 1.8s forwards}
+@keyframes nt{to{transform:translateY(-70px) rotate(20deg);opacity:0}}
+.br{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px;margin-top:46px;text-align:left}
+.b{border:1px solid var(--ink);padding:36px 30px;background:#fff;transition:.5s;position:relative;overflow:hidden}
+.b::after{content:"";position:absolute;right:-30px;top:-30px;width:90px;height:90px;border:1px solid var(--line);border-radius:50%;transition:.6s}
+.b:hover{transform:translateY(-10px);box-shadow:14px 14px 0 var(--ink)}.b:hover::after{transform:scale(3)}
+.b h3{font-size:1.6rem;margin-bottom:4px}.b .hr{font-family:var(--hand);font-size:1.9rem;margin:10px 0}
+.b p{color:var(--g);font-size:.95rem}.b .btn{margin-top:18px;padding:11px 26px;font-size:.76rem}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin-top:50px;border:1px solid var(--ink);background:#fff}
+.f{text-align:center;padding:40px 22px;transition:.5s;border-right:1px solid var(--line)}
+.f:hover{background:var(--ink);color:#fff;transform:scale(1.04);z-index:2;box-shadow:0 24px 50px rgba(0,0,0,.35)}
+.f .ic{font-size:2.2rem;margin-bottom:10px;display:inline-block;transition:.6s}.f:hover .ic{transform:rotateY(360deg)}
+.f p{font-size:.92rem;color:var(--g)}.f:hover p{color:#ccc}
+.quotes{position:relative;max-width:720px;margin:40px auto 0;min-height:180px;text-align:center}
+.q{position:absolute;inset:0;opacity:0;transform:translateX(40px);transition:.8s;font-family:var(--serif);font-size:clamp(1.2rem,3vw,1.6rem);font-style:italic}
+.q.on{opacity:1;transform:none}.q small{display:block;font-family:var(--hand);font-style:normal;font-size:1.9rem;margin-top:14px}
+.dots{display:flex;gap:10px;justify-content:center;margin-top:20px}
+.dots i{width:9px;height:9px;background:#c8c8cc;cursor:pointer;transition:.4s;transform:rotate(45deg)}.dots i.on{background:var(--ink);transform:rotate(45deg) scale(1.4)}
+.res{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+form{border:1px solid var(--ink);padding:34px;box-shadow:14px 14px 0 var(--line);background:#fff}
+.fld{position:relative;margin-bottom:20px}
+.fld input,.fld select{width:100%;padding:20px 14px 8px;border:1px solid #cfcfd3;font:1rem var(--sans);background:#fff;color:var(--ink);transition:.3s;border-radius:0}
+.fld label{position:absolute;left:15px;top:14px;color:var(--g);pointer-events:none;transition:.3s;font-size:.95rem}
+.fld input:focus,.fld select:focus{outline:none;border-color:var(--ink);box-shadow:4px 4px 0 var(--line)}
+.fld input:focus+label,.fld input:not(:placeholder-shown)+label,.fld select+label{top:3px;font-size:.7rem;color:var(--ink)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+form .btn{width:100%}
+.info p{margin:14px 0;display:flex;gap:14px;align-items:center}
+.info em{font-style:normal;width:46px;height:46px;flex:none;border:1px solid var(--ink);display:grid;place-items:center;transition:.4s}
+.info p:hover em{background:var(--ink);transform:rotate(45deg)}
+.info a:hover{text-decoration:underline}
+footer{background:var(--ink);color:#bdbdc2;text-align:center;padding:54px 0 calc(30px + env(safe-area-inset-bottom))}
+footer .logo{color:#fff;font-size:3.6rem}
+.soc{display:flex;gap:14px;justify-content:center;margin:18px 0;flex-wrap:wrap}
+.soc a{padding:9px 22px;border:1px solid #555;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;transition:.4s}.soc a:hover{background:#fff;color:var(--ink);transform:translateY(-4px)}
+footer small{opacity:.6}
+.toast{position:fixed;left:50%;bottom:30px;transform:translate(-50%,120px);background:var(--ink);color:#fff;padding:14px 26px;z-index:400;transition:.6s cubic-bezier(.2,1.4,.4,1);box-shadow:0 12px 30px rgba(0,0,0,.35);text-align:center;width:max-content;max-width:90vw}
+.toast.on{transform:translate(-50%,0)}
+.topb{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom));width:48px;height:48px;background:var(--ink);color:#fff;border:0;font-size:1.2rem;cursor:pointer;opacity:0;transform:scale(0) rotate(90deg);transition:.4s;z-index:90}
+.topb.on{opacity:1;transform:none}
+.rv{opacity:0;transition:opacity 1s,transform 1s;transform:translateY(50px)}
+.rv.l{transform:translateX(-60px)}.rv.r{transform:translateX(60px)}.rv.z{transform:scale(.9)}
+.rv.in{opacity:1;transform:none}
+@media(max-width:860px){
+section{padding:72px 0}
+.burger{display:block}
+.links{position:fixed;inset:0;background:#fff;flex-direction:column;justify-content:center;gap:26px;clip-path:circle(0 at calc(100% - 40px) 40px);transition:clip-path .7s;z-index:110}
+.links a{font-size:1.05rem}
+.links.on{clip-path:circle(150% at calc(100% - 40px) 40px)}
+.about,.res{grid-template-columns:1fr;gap:40px}
+.frame{max-width:340px;margin:auto;width:100%;box-shadow:14px 14px 0 var(--line)}
+.f{border-right:0;border-bottom:1px solid var(--line)}
+.keys{height:170px}
+}
+@media(max-width:480px){.row{grid-template-columns:1fr}form{padding:24px 18px}.stat b{font-size:1.7rem}.br{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;transition-duration:.01s!important}}
+</style>
+</head>
+<body>
+<div id="pre"><div>
+<svg viewBox="0 0 200 130" class="dr"><path pathLength="1" d="M52 78C48 28 152 28 148 78"/><ellipse pathLength="1" cx="100" cy="82" rx="76" ry="14"/><path pathLength="1" d="M60 100c20-12 60-12 80 0-20 8-60 8-80 0z" class="fl"/><path pathLength="1" d="M62 66h76"/></svg>
+<b>Chaplin</b></div></div>
+
+<nav id="nav"><div class="wrap">
+<a href="#home" class="logo">Chaplin<small>COFFEE</small></a>
+<button class="burger" id="bg" aria-label="Menyu"><span></span><span></span><span></span></button>
+<div class="links" id="lk">
+<a href="#about">Haqqımızda</a><a href="#menu">Menyu</a><a href="#music">Canlı musiqi</a><a href="#loc">Filiallar</a><a href="#book" class="btn sol">Rezerv et</a>
+</div></div></nav>
+
+<header id="home">
+<canvas id="pt"></canvas>
+<div class="wrap">
+<svg class="hat dr" viewBox="0 0 200 130" aria-hidden="true"><path pathLength="1" d="M52 78C48 28 152 28 148 78"/><ellipse pathLength="1" cx="100" cy="82" rx="76" ry="14"/><path pathLength="1" d="M60 100c20-12 60-12 80 0-20 8-60 8-80 0z" class="fl"/><path pathLength="1" d="M62 66h76"/></svg>
+<h1 class="hero-t" id="ht">Chaplin</h1>
+<p class="tag">COFFEE · BAKU</p>
+<p class="hero-s">Bir fincan qəhvə, bir dilim desert və piano sədası. Səssiz kino ruhunda bir sığınacaq.</p>
+<div class="cta"><a href="#menu" class="btn sol">Menyuya bax</a><a href="#book" class="btn">Masa rezerv et</a></div>
+</div>
+<div class="scroll"></div>
+</header>
+
+<div class="film"><div id="mq"></div></div>
+
+<section id="about"><div class="wrap about">
+<div class="rv l"><div class="frame" id="fr"><b>Qəhvə,<br>musiqi və<br>kino ruhu</b></div></div>
+<div class="rv r">
+<h2>Hər fincan bir <em>kadr</em></h2>
+<div class="orn" style="justify-content:flex-start"><b></b><i></i></div>
+<p>Chaplin Coffee Bakıda specialty qəhvə, əl işi desertlər, mocktaillər və şərab menyusunu bir araya gətirir. Lüstrlər, qızılı detallar və qrand piano əhatəsində hər görüş bir filmə bənzəyir.</p>
+<p>İçərişəhərdə və Ağ şəhərdə iki filialımız səhərdən gecəyə qədər sizi gözləyir.</p>
+<div class="stats">
+<div class="stat"><b data-n="2">0</b><span>filial</span></div>
+<div class="stat"><b data-n="718">0</b><span>paylaşım</span></div>
+<div class="stat"><b data-n="24">0</b><span>min+ izləyici</span></div>
+</div></div></div></section>
+
+<section id="menu" class="alt"><div class="wrap center">
+<h2 class="rv">Menyu <em>kolleksiyası</em></h2>
+<div class="orn"><i></i><b></b><i></i></div>
+<p class="sub rv">Qəhvə dənələrindən şirniyyatlara qədər, hər şey diqqətlə seçilib.</p>
+<div class="tabs rv" id="tabs"></div>
+<div class="grid" id="grid"></div>
+<p class="rv" style="margin-top:36px"><a href="https://linktr.ee/chaplincoffeehouse" target="_blank" rel="noopener" class="btn">Tam menyu</a></p>
+</div></section>
+
+<section id="music"><div class="wrap center">
+<h2 class="rv">Canlı <em>musiqi</em></h2>
+<div class="orn"><i></i><b></b><i></i></div>
+<p class="sub rv">Qrand piano axşamlarında musiqi süfrəyə qoşulur. Bir dəfə özünüz çalın!</p>
+<div class="pn rv z"><div class="keys" id="keys"></div><div class="notes" id="nts"></div><p class="hint">Düymələrə toxunun və ya A S D F G H J K</p></div>
+</div></section>
+
+<section id="loc" class="alt"><div class="wrap center">
+<h2 class="rv">Filiallarımız</h2>
+<div class="orn"><i></i><b></b><i></i></div>
+<div class="br">
+<div class="b rv l"><h3>İçərişəhər</h3><div class="hr">08:00 – 23:00</div><p>İstiqlaliyyat küç. 71, Bakı<br>Hər gün açıqdır.</p><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Chaplin+Coffee+Istiqlaliyyat+71+Baku">Xəritədə aç</a></div>
+<div class="b rv r"><h3>Ağ şəhər (White City)</h3><div class="hr">09:00 – 02:00</div><p>Yaşıl ada küç. 1, Bakı<br>Gec saatlara qədər.</p><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Chaplin+Coffee+White+City+Baku">Xəritədə aç</a></div>
+</div></div></section>
+
+<section id="why"><div class="wrap center">
+<h2 class="rv">Niyə <em>Chaplin?</em></h2>
+<div class="orn"><i></i><b></b><i></i></div>
+<div class="feat">
+<div class="f rv z"><div class="ic">☕</div><h3>Specialty qəhvə</h3><p>V60, chemex, espresso və latte art.</p></div>
+<div class="f rv z" style="transition-delay:.15s"><div class="ic">🎹</div><h3>Canlı piano</h3><p>Qrand piano ilə axşam proqramları.</p></div>
+<div class="f rv z" style="transition-delay:.3s"><div class="ic">🍰</div><h3>Təzə desertlər</h3><p>Red velvet, cheesecake, matcha və daha çoxu.</p></div>
+<div class="f rv z" style="transition-delay:.45s"><div class="ic">🏛️</div><h3>Lüks interyer</h3><p>Lüstrlər, qızılı detallar və kino atmosferi.</p></div>
+</div></div></section>
+
+<section class="alt"><div class="wrap center">
+<h2 class="rv">Qonaq <em>rəyləri</em></h2>
+<div class="quotes">
+<div class="q on">“Bakının ən fərqli qəhvəxanası. Pianonun səsi altında qəhvə içmək xüsusi hissdir.”<small>Qonaq</small></div>
+<div class="q">“Red velvet və cappuccino qeyri-adi uyğun gəldi. İnterier isə sözlə izah olunmur.”<small>Qonaq</small></div>
+<div class="q">“Dostlarla görüş üçün ideal məkan. Hər dəfə yeni bir şey kəşf edirik.”<small>Qonaq</small></div>
+</div>
+<div class="dots" id="dots"></div>
+</div></section>
+
+<section id="book"><div class="wrap res">
+<div class="info rv l">
+<h2>Masa <em>rezerv edin</em></h2>
+<p class="sub">Formu doldurun, qalanını komandamız həll edər.</p>
+<div style="margin-top:26px">
+<p><em>📞</em><a id="tel" href="#"></a></p>
+<p><em>📷</em><a id="ig" href="#" target="_blank" rel="noopener"></a></p>
+<p><em>📖</em><a href="https://linktr.ee/chaplincoffeehouse" target="_blank" rel="noopener">Rəsmi menyu və keçidlər</a></p>
+<p><em>📍</em><span>İstiqlaliyyat küç. 71 · Yaşıl ada küç. 1</span></p>
+</div></div>
+<form id="f" class="rv r">
+<div class="fld"><input id="nm" placeholder=" " required><label for="nm">Ad, soyad</label></div>
+<div class="fld"><input id="ph" type="tel" placeholder=" " required><label for="ph">Telefon</label></div>
+<div class="fld"><select id="fl"><option>İçərişəhər</option><option>Ağ şəhər</option></select><label>Filial</label></div>
+<div class="row">
+<div class="fld"><input id="dt" type="date" placeholder=" " required><label for="dt">Tarix</label></div>
+<div class="fld"><input id="tm" type="time" placeholder=" " required value="18:00"><label for="tm">Saat</label></div></div>
+<div class="fld"><select id="gs"><option>1-2 nəfər</option><option>3-4 nəfər</option><option>5-8 nəfər</option><option>9+ nəfər</option></select><label>Qonaq sayı</label></div>
+<button class="btn sol" type="submit">Rezervi göndər</button>
+</form></div></section>
+
+<footer><div class="wrap">
+<div class="logo">Chaplin</div><p>Chaplin Coffee · Baku</p>
+<div class="soc"><a id="ig2" href="#" target="_blank" rel="noopener">Instagram</a><a href="https://linktr.ee/chaplincoffeehouse" target="_blank" rel="noopener">Menyu</a><a id="tl" href="#">Zəng et</a></div>
+<small>© <span id="yr"></span> Chaplin Coffee. Bütün hüquqlar qorunur.</small>
+</div></footer>
+
+<button class="topb" id="topb" aria-label="Yuxarı">↑</button>
+<div class="toast" id="ts"></div>
+
+<script>
+/* ===== Əlaqə məlumatları ===== */
+const CFG={phone:'994124972976',phoneText:'(+994) 12 497 29 76',insta:'chaplincoffee_',wa:'994124972976'};
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+addEventListener('load',()=>setTimeout(()=>$('#pre').classList.add('off'),2400));
+setTimeout(()=>$('#pre').classList.add('off'),4200);
+$('#ht').innerHTML=[...'Chaplin'].map((c,i)=>`<span style="animation-delay:${2.2+i*.09}s">${c}</span>`).join('');
+$('#mq').innerHTML=('<span>Espresso</span><span>🎬</span><span>Latte art</span><span>🎬</span><span>V60</span><span>🎬</span><span>Red velvet</span><span>🎬</span><span>Live music</span><span>🎬</span><span>Wine</span><span>🎬</span>').repeat(6);
+$('#yr').textContent=new Date().getFullYear();
+$('#tel').textContent=CFG.phoneText;$('#tel').href=$('#tl').href='tel:+'+CFG.phone;
+$('#ig').textContent='@'+CFG.insta;$('#ig').href=$('#ig2').href='https://instagram.com/'+CFG.insta;
+const nav=$('#nav'),topBtn=$('#topb'),bg=$('#bg'),lk=$('#lk');
+addEventListener('scroll',()=>{nav.classList.toggle('s',scrollY>40);topBtn.classList.toggle('on',scrollY>600)},{passive:true});
+topBtn.onclick=()=>scrollTo({top:0,behavior:'smooth'});
+bg.onclick=()=>{bg.classList.toggle('x');lk.classList.toggle('on')};
+$$('.links a').forEach(a=>a.onclick=()=>{bg.classList.remove('x');lk.classList.remove('on')});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');
+e.target.querySelectorAll('[data-n]').forEach(c=>{const n=+c.dataset.n;let v=0;const st=Math.ceil(n/40);const t=setInterval(()=>{v+=st;if(v>=n){v=n;clearInterval(t)}c.textContent=v},35)});
+io.unobserve(e.target)}}),{threshold:.15});
+$$('.rv').forEach(e=>io.observe(e));
+const M={
+'Qəhvə':[['☕','Espresso və americano','Seçmə dənələrdən, tünd və ətirli.'],['🥛','Cappuccino və latte','İpək süd köpüyü və latte art.'],['🫖','V60 / Chemex','Filtr qəhvə, əl ilə dəmlənmiş.'],['🧊','Iced coffee','Soyuq dəmləmə və buzlu latte.']],
+'Desert':[['🍰','Red velvet','Qırmızı qat və krem pendir kremi.'],['🧀','Cheesecake','Qaymaqlı, qızılı qabıqlı.'],['🍵','Matcha desert','Yaşıl çay və yumşaq krem.'],['🍓','Çiyələkli desert','Təzə meyvə və zərif krem.']],
+'İçkilər':[['🍹','Mocktail','Rəngarəng, meyvəli və təravətli.'],['🍋','Limonad','Ev üsulu ilə hazırlanır.'],['🍫','İsti şokolad','Qatı, kremli, mövsümi.'],['🍵','Çay kolleksiyası','Qara, yaşıl və bitki çayları.']],
+'Şərab və yüngül':[['🍷','Şərab menyusu','Seçmə qırmızı, ağ və köpüklü.'],['🧀','Pendir boşqabı','Pendir, meyvə və qoz.'],['🥗','Salat','Təzə tərəvəz və yüngül sous.'],['🥪','Sendviç','Təzə çörək və seçmə içlik.']]};
+const k=Object.keys(M);
+$('#tabs').innerHTML=k.map((t,i)=>`<button class="tab${i?'':' on'}">${t}</button>`).join('');
+function show(t){$('#grid').innerHTML=M[t].map((d,i)=>`<div class="card" style="animation-delay:${i*.08}s"><div class="ic">${d[0]}</div><h3>${d[1]}</h3><p>${d[2]}</p></div>`).join('');
+$$('.card').forEach(c=>{c.onmousemove=e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`perspective(700px) rotateY(${x*9}deg) rotateX(${-y*9}deg) translateY(-6px)`};c.onmouseleave=()=>c.style.transform=''})}
+show(k[0]);
+$$('.tab').forEach(b=>b.onclick=()=>{$$('.tab').forEach(x=>x.classList.remove('on'));b.classList.add('on');show(b.textContent)});
+/* piano */
+const F=[261.63,293.66,329.63,349.23,392,440,493.88,523.25],N=['C','D','E','F','G','A','B','C'],KY='asdfghjk',B=[[0,277.18],[1,311.13],[3,369.99],[4,415.3],[5,466.16]];
+let AC;
+function play(f,el){try{AC=AC||new(window.AudioContext||window.webkitAudioContext)();const o=AC.createOscillator(),g=AC.createGain();o.type='triangle';o.frequency.value=f;g.gain.setValueAtTime(.0001,AC.currentTime);g.gain.exponentialRampToValueAtTime(.35,AC.currentTime+.02);g.gain.exponentialRampToValueAtTime(.0001,AC.currentTime+1.4);o.connect(g).connect(AC.destination);o.start();o.stop(AC.currentTime+1.5)}catch(e){}
+el.classList.add('a');setTimeout(()=>el.classList.remove('a'),160);
+const n=document.createElement('i');n.textContent=['♪','♫','♬'][Math.random()*3|0];n.style.left=(10+Math.random()*80)+'%';$('#nts').appendChild(n);setTimeout(()=>n.remove(),1800)}
+const kz=$('#keys');
+F.forEach((f,i)=>{const b=document.createElement('button');b.className='wk';b.textContent=N[i];b.setAttribute('aria-label','Nota '+N[i]);b.onpointerdown=e=>{e.preventDefault();play(f,b)};kz.appendChild(b)});
+B.forEach(([i,f])=>{const b=document.createElement('button');b.className='bk';b.style.left=`calc(${(i+1)*12.5}% - 4%)`;b.setAttribute('aria-label','Diyez nota');b.onpointerdown=e=>{e.preventDefault();play(f,b)};kz.appendChild(b)});
+addEventListener('keydown',e=>{const i=KY.indexOf(e.key.toLowerCase());if(i>-1&&!e.repeat&&!/INPUT|SELECT/.test(document.activeElement.tagName))play(F[i],$$('.wk')[i])});
+/* rəylər */
+const qs=$$('.q');let qi=0;
+$('#dots').innerHTML=qs.map((_,i)=>`<i class="${i?'':'on'}"></i>`).join('');
+const ds=$$('#dots i');
+function go(i){qs[qi].classList.remove('on');ds[qi].classList.remove('on');qi=i;qs[qi].classList.add('on');ds[qi].classList.add('on')}
+ds.forEach((d,i)=>d.onclick=()=>go(i));
+setInterval(()=>go((qi+1)%qs.length),5000);
+$('#dt').min=new Date().toISOString().split('T')[0];
+function toast(m){const t=$('#ts');t.textContent=m;t.classList.add('on');setTimeout(()=>t.classList.remove('on'),3500)}
+$('#f').onsubmit=e=>{e.preventDefault();
+const m=`Salam! Rezerv: ${$('#nm').value}, tel: ${$('#ph').value}, filial: ${$('#fl').value}, tarix: ${$('#dt').value}, saat: ${$('#tm').value}, ${$('#gs').value}.`;
+toast('Təşəkkürlər! WhatsApp-a yönləndirilirsiniz…');
+setTimeout(()=>open('https://wa.me/'+CFG.wa+'?text='+encodeURIComponent(m),'_blank'),1200);e.target.reset()};
+/* qəhvə dənələri */
+const cv=$('#pt'),cx=cv.getContext('2d');let W,H,P=[];
+function rs(){W=cv.width=cv.offsetWidth;H=cv.height=cv.offsetHeight}rs();addEventListener('resize',rs);
+for(let i=0;i<(innerWidth<600?14:26);i++)P.push({x:Math.random()*1400,y:Math.random()*900,r:5+Math.random()*7,s:.4+Math.random()*.9,a:Math.random()*6,w:(Math.random()-.5)*.03});
+(function d(){cx.clearRect(0,0,W,H);P.forEach(p=>{p.y+=p.s;p.a+=p.w;if(p.y>H+20){p.y=-20;p.x=Math.random()*W}
+cx.save();cx.translate(p.x,p.y);cx.rotate(p.a);cx.globalAlpha=.16;cx.fillStyle='#0b0b0c';cx.beginPath();cx.ellipse(0,0,p.r,p.r*1.45,0,0,7);cx.fill();cx.globalAlpha=.5;cx.strokeStyle='#fff';cx.lineWidth=1.2;cx.beginPath();cx.moveTo(0,-p.r*1.2);cx.quadraticCurveTo(p.r*.6,0,0,p.r*1.2);cx.stroke();cx.restore()});requestAnimationFrame(d)})();
+addEventListener('mousemove',e=>{const f=$('#fr');if(f)f.style.transform=`rotateY(${(e.clientX/innerWidth-.5)*8}deg) rotateX(${-(e.clientY/innerHeight-.5)*6}deg)`});
+</script>
+</body>
+</html>
